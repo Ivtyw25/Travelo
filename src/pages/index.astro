@@ -1,10 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Event from "../component/Event.jsx";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Hello</h1>
-	</main>
+  <main>
+    <Event client:load />
+  </main>
 </Layout>
-
