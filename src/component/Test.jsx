@@ -1,7 +1,7 @@
 export default function Test(){
     return(
         <h1>
-            Hello
+            Hello, World
         </h1>
     )
 }
