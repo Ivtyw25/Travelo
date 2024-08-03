@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Card from '../component/Card.jsx'
+---
+
+<Layout title="Welcome to Reward Page">
+    <div class="container mx-auto py-10">
+        <h2 class="text-white text-center text-2xl mb-6">Here are the available badges</h2>
+        <div class="flex flex-row justify-center gap-6">
+            <Card src="/images/AisKacang.png" alt="Monday" title="Ais Kacang" text="1 collected" />
+            <Card src="/images/Iban.png" alt="Tuesday" title="Iban" text="1 collected" />
+            <Card src="/images/Ketupat.png" alt="Wednesday" title="Ketupat" text="0 collected" />
+            <Card src="/images/KualaLumpur.png" alt="Thursday" title="Malaysia" text="0 collected" />
+            <Card src="/images/NasiLemak.png" alt="Friday" title="Nasi Lemak" text="1 collected" />
+        </div>
+        <div class="text-center mt-8">
+            <button class="bg-red-500 text-white py-2 px-4 rounded">Collect badge</button>
+        </div>
+    </div>
+</Layout>
