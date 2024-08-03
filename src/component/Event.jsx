@@ -32,7 +32,7 @@ Activities include:
 - Workshops 
 - Exhibitions, demonstrations, and craft sales 
 - Food sale (food truck)`,
-    imageUrl: '../Event/MALAYSIAN GAMES FESTIVAL.jpeg',
+    imageUrl: '../images/Event/MALAYSIAN GAMES FESTIVAL.jpeg',
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ Among the fillings:
 The internationally known Straits of Malacca is the inspiration for the festival which will be participated 
 by regions fronting the Straits. Contents of the festival is reflective of Malacca as a world heritage city 
 recognized and ratified by UNESCO.`,
-    imageUrl: '../Event/MELAKA STRAIT ARTS FESTIVAL.jpg',
+    imageUrl: '../images/Event/MELAKA STRAIT ARTS FESTIVAL.jpg',
   },
   {
     id: 3,
@@ -83,7 +83,7 @@ Amongst the activities lined up include:
 - Exhibition, demonstration and sale of local crafts 
 - Exhibition by Agancies 
 - Local Talent Competition including Sounds of Sabah Music competition`,
-    imageUrl: '../Event/RHYTHMS OF KINABALU.png',
+    imageUrl: '../images/Event/RHYTHMS OF KINABALU.png',
   },
   {
     id: 4,
@@ -115,7 +115,7 @@ things.
 - Community Sports and games
 - Cooking competitions
 - Exhibitions and sales`,
-    imageUrl: '../Event/FESTIVAL SELANGOR.jpg',
+    imageUrl: '../images/Event/FESTIVAL SELANGOR.jpg',
   },
 ];
 
