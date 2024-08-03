@@ -2,40 +2,45 @@
 import Layout from '../layouts/Layout.astro';
 import {connectToDatabase } from '../server';
 import StateCard from './../component/StateCard'
+import {data} from '../data/state-mission';
 
-let data=[]
-let errorMessage='';
-let groupedData={};
-try {
-  const { db } = await connectToDatabase();
-  const collection = db.collection('plan');
-  data = await collection.find().toArray();
+// let data=[]
+// let errorMessage='';
+// let groupedData={};
+// try {
+//   const { db } = await connectToDatabase();
+//   const collection = db.collection('plan');
+//   data = await collection.find().toArray();
 
-  if (data.length === 0) {
-    errorMessage = 'No data found in the collection.';
-  } else {
-    // Group data by category
-    groupedData = data.reduce((acc, item) => {
-      if (!acc[item.Category]) {
-        acc[item.Category] = [];
-      }
-      acc[item.Category].push(item);
-      return acc;
-    }, {});
-  }
-} catch (error) {
-  errorMessage = `Error fetching data: ${error.message}`;
-}
+//   if (data.length === 0) {
+//     errorMessage = 'No data found in the collection.';
+//   } else {
+//     // Group data by category
+//     groupedData = data.reduce((acc, item) => {
+//       if (!acc[item.Category]) {
+//         acc[item.Category] = [];
+//       }
+//       acc[item.Category].push(item);
+//       return acc;
+//     }, {});
+//   }
+// } catch (error) {
+//   errorMessage = `Error fetching data: ${error.message}`;
+// }
 ---
 <Layout title="Mission of Malaysian">
   <div>
     <h1 class = " items-center my-4 justify-center flex text-3xl font-bold">
             Mission of Malaysian
     </h1>
-    <main class = "mx-10 my-5">
-      <a href="/Food/">
-        <StateCard/>
+    <main class = "mx-10 my-5 grid grid-cols-3">
+      <a href="/Mission-sarawak/">
+        <StateCard state="Sarawak" data={data}/>
       </a>
+      <a href="/Mission-penang/">
+        <StateCard state="Penang" data={data}/>
+      </a>
+
     </main>
   </div>
 </Layout>

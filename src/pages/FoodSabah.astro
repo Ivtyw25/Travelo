@@ -1,0 +1,224 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+  rel="stylesheet"
+/>
+
+<Layout title="Sabah Cuisine">
+  <main>
+    <div class="container" id="blur">
+      <div>
+        <h1 class="titles">Foodies Corner</h1>
+      </div>
+      <p class="cuisine">Sabah cuisine</p>
+      <div class="food">
+        <div>
+          <img class="food-pic" src="foodimage2/NgiuChap.jpg" onclick="openModal()" alt="Ngiu Chap" />
+          <p class="food-name">Ngiu Chap</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for displaying details -->
+   <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-body">
+        <div class="modal-content-container">
+          <img id="modalImage" src="foodimage2/NgiuChap.jpg" alt="Ngiu Chap" class="modal-image" />
+          <div class="modal-details">
+            <p id="modalTitle"><span class="bou">Dish Name:</span> Ngiu Chap</p>
+            <p id="modalDetails"><span class="bou">Origin:</span> Sabah</p>
+            <p id="modalDetails"><span class="bou">Spiciness Level:</span> Low</p>
+            <p id="modalDetails"><span class="bou">Halal:</span> Non-Halal</p>
+            <p id="modalDetails"><span class="bou">Price Range:</span> RM10.00 - RM15.00</p>
+          </div>
+        </div>
+        <br>
+        <div class="modal-detail-block">
+          <p id="modalDetailText" style="width: 600px; margin-left: 125px; text-align: left; margin-bottom: 30px;"><span class="bou">Description:</span><br><br><span class="description">This noodle soup dish is considered a signature dish of Sabah. 'Ngiu chap' means beef mix and the beef mix here includes livers, hearts, intestines, and tendons of bovines. This food of Sabah is cooked with rice vermicelli noodles in a scrumptious, hearty broth. Sometimes the dish includes a small undertone of radish. Ngiu chap noodles are served with a side of spicy chilli sauce to give it an extra kick of flavour.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    function openModal() {
+      const blurElement = document.getElementById('blur');
+      const modalElement = document.getElementById('modal');
+      if (blurElement && modalElement) {
+        blurElement.classList.add('active');
+        modalElement.style.display = 'block';
+      }
+    }
+
+    function closeModal() {
+      const blurElement = document.getElementById('blur');
+      const modalElement = document.getElementById('modal');
+      if (blurElement && modalElement) {
+        blurElement.classList.remove('active');
+        modalElement.style.display = 'none';
+      }
+    }
+  </script>
+</main>
+</Layout>
+
+<style>
+.titles {
+  font-family: inter;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.cuisine {
+  background-color: gray;
+  font-family: Acme;
+  font-size: 30px;
+  display: inline-block;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.food {
+  display: flex;
+  flex-direction: row;
+}
+
+.food-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  flex: 1;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.food-name {
+  font-family: Roboto;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.food-pic:hover {
+  transform: scale(1.2);
+}
+
+.container#blur.active {
+  filter: blur(20px);
+  pointer-events: none; /* Prevents interaction with blurred content */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #333; /* Dark background color */
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px; /* Rounded corners */
+  width: 70%; /* Adjust width to be smaller */
+  max-width: 900px; /* Maximum width */
+  color: #fff; /* White text color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Needed for the close button to be positioned absolutely within this */
+  padding-top: 60px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.modal-content-container {
+  display: flex;
+  flex-direction: row; /* Keep image and details side by side */
+  align-items: flex-start; /* Align items to the top */
+  width: 100%;
+}
+
+.modal-image {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 100px; /* Space between image and details */
+  margin-left: 150px;
+}
+
+.modal-details {
+  width: 50%;
+  text-align: left; /* Align text to the left */
+}
+
+.modal-details p {
+  font-size: 18px; /* Adjust font size if needed */
+  margin-bottom: 10px; /* Adds spacing between paragraphs */
+}
+
+.modal-detail-block {
+  width: 100%;
+  text-align: left; /* Align text to the left */
+  padding-top: 10px; /* Adds space above the detail block */
+  margin-left: 50px;
+}
+
+.modal-detail-block p {
+  font-size: 18px; /* Same font size as other details */
+  margin-bottom: 10px; /* Adds spacing between paragraphs */
+}
+
+.close {
+  color: #aaa;
+  position: absolute; /* Position absolutely within the modal content */
+  top: 10px; /* Distance from the top of the modal content */
+  right: 20px; /* Distance from the right of the modal content */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff; /* Change color on hover or focus */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.description {
+  margin-left: 30px;
+}
+
+.bou {
+  font-weight: bold; /* Correct property for bold text */
+}
+
+</style>

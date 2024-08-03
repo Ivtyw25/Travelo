@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro"
+import {data} from "../data/state-mission"
+import MissionCard from "../component/MissionCard"
+---
+<Layout title="Mission of Malaysian">
+    <div>
+      <h1 class = " items-center my-4 justify-center flex text-3xl font-bold">
+              Your Mission
+      </h1>
+      <main class = "mx-10 my-5 grid grid-cols-3">
+        {data.map(item => item.State === "Penang"?(
+            <MissionCard data={item}/>
+          ):null)}
+      </main>
+    </div>
+  </Layout>

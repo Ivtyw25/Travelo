@@ -1,14 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
-const twinTowerImagePath = '/images/Treasure.webp'; // Path relative to the public directory
-const calendarImagePath = '/images/Calendar.png';
-const foodImagePath = '/images/Food.png';
-const planTripImagePath = '/images/PlanTrip.png';
-const tourGuideImagePath = '/images/TourGuide.jpg';
-const calendarLink = '/Event'; // Replace with actual URL
-const foodLink = '/food'; // Replace with actual URL
-const planTripLink = '/plan-trip'; // Replace with actual URL
-const tourGuideLink = '/tour-guide'; // Replace with actual URL
+import Layout from "../layouts/Layout.astro";
+const twinTowerImagePath = "/images/Treasure.webp"; // Path relative to the public directory
+const calendarImagePath = "/images/Calendar.jpg";
+const foodImagePath = "/images/Food.jpg";
+const planTripImagePath = "/images/PlanTrip.jpg";
+const tourGuideImagePath = "/images/TourGuide.jpg";
+const calendarLink = "/Event"; // Replace with actual URL
+const foodLink = "/food"; // Replace with actual URL
+const planTripLink = "/plan-trip"; // Replace with actual URL
+const tourGuideLink = "/TourGuide"; // Replace with actual URL
 ---
 
 <Layout title="Welcome to Travelo.">
@@ -41,7 +41,12 @@ const tourGuideLink = '/tour-guide'; // Replace with actual URL
 	</div>
 
   <div class="features-container p-8">
-    <h1 class="text-bold text-4xl text-center mb-9" style="font-family: 'Arial', sans-serif;">Our Top Features</h1>
+    <h1
+      class="text-bold text-4xl text-center mb-9"
+      style="font-family: 'Arial', sans-serif;"
+    >
+      Our Top Features
+    </h1>
     <div class="flex justify-center gap-4">
       <a
         href={calendarLink}

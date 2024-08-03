@@ -1,7 +1,7 @@
 .containers{
     border: 2px solid rgba(128,128,128,0.1);
     position: relative;
-    max-width: 420px;
+    max-width: 440px;
     border-radius: 20px;
     padding: 10px 25px;
     display: block;
@@ -30,4 +30,50 @@
 .containers:hover{
     opacity: 1;
     color: #000000;
+}
+
+.mission-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.mission-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.mission-content {
+    padding: 20px;
+    
+}
+
+.task-name {
+    font-size: 24px;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.desc {
+    font-size: 12px;
+    margin: 0 0 10px;
+    color: #555;
+    margin-bottom: 10px;
+
+}
+
+.location {
+    font-size: 10px;
+    color: #777;
+}
+
+.stats{
+    font-size: 10px;
+    color: #777;
+    margin-top: 5px;
 }

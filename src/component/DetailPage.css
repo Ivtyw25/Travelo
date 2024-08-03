@@ -1,0 +1,23 @@
+/* DetailPage.css */
+.Detail {
+    text-align: left;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../public/TourGuide/page2.png');
+    background-size: cover;
+    background-position: center;
+    color: black;
+  }
+  
+  .Detail-header {
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  
+  .description {
+    margin-left: 50px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
