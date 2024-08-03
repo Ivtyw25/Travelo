@@ -1,10 +1,50 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const twinTowerImagePath = '/images/TwinTower.jpg'; // Path relative to the public directory
+const calendarImagePath = '/images/Calendar.png';
+const foodImagePath = '/images/Food.png';
+const planTripImagePath = '/images/PlanTrip.png';
+const tourGuideImagePath = '/images/TourGuide.jpg';
+const calendarLink = '/calendar'; // Replace with actual URL
+const foodLink = '/food'; // Replace with actual URL
+const planTripLink = '/plan-trip'; // Replace with actual URL
+const tourGuideLink = '/tour-guide'; // Replace with actual URL
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Hello</h1>
-	</main>
+<Layout title="Welcome to Travelo.">
+  <div class="relative h-screen">
+    <img src={twinTowerImagePath} alt="Twin Tower" class="w-full h-full object-cover flex" />
+    <div class="mr-20 absolute inset-0 flex justify-end items-center">
+		<div class="flex items-center justify-center text-white p-5 rounded font-manrope shadow-lg shadow-gray-800">
+			<h1 class="text-xl font-bold">Let's Traverse Malaysia!</h1>
+		  </div>
+		  
+    </div>
+  </div>
+  <div class="features-container p-8">
+    <h1 class="text-bold text-4xl text-center mb-9">Our Top Features</h1>
+    <div class="flex justify-center gap-4">
+      <a href={calendarLink} class="relative flex-shrink-0 w-1/4 h-60 bg-cover bg-center transition-transform duration-300 hover:scale-105" style={`background-image: url(${calendarImagePath})`}>
+        <div class="absolute inset-0 bg-white bg-opacity-50 text-center text-black flex items-center justify-center p-2 transition-opacity duration-300 hover:bg-opacity-75">
+          <h2 class="text-xl font-bold">Local Event Calendar</h2>
+        </div>
+      </a>
+      <a href={foodLink} class="relative flex-shrink-0 w-1/4 h-60 bg-cover bg-center transition-transform duration-300 hover:scale-105" style={`background-image: url(${foodImagePath})`}>
+        <div class="absolute inset-0 bg-white bg-opacity-50 text-center text-black flex items-center justify-center p-2 transition-opacity duration-300 hover:bg-opacity-75">
+          <h2 class="text-xl font-bold">Food Story Board</h2>
+        </div>
+      </a>
+      <a href={planTripLink} class="relative flex-shrink-0 w-1/4 h-60 bg-cover bg-center transition-transform duration-300 hover:scale-105" style={`background-image: url(${planTripImagePath})`}>
+        <div class="absolute inset-0 bg-white bg-opacity-50 text-center text-black flex items-center justify-center p-2 transition-opacity duration-300 hover:bg-opacity-75">
+          <h2 class="text-xl font-bold">Interactive Map</h2>
+        </div>
+      </a>
+      <a href={tourGuideLink} class="relative flex-shrink-0 w-1/4 h-60 bg-cover bg-center transition-transform duration-300 hover:scale-105" style={`background-image: url(${tourGuideImagePath})`}>
+        <div class="absolute inset-0 bg-white bg-opacity-50 text-center text-black flex items-center justify-center p-2 transition-opacity duration-300 hover:bg-opacity-75">
+          <h2 class="text-xl font-bold">Personal Tour Guide</h2>
+        </div>
+      </a>
+    </div>
+  </div>
 </Layout>
 
