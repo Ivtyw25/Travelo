@@ -1,0 +1,10 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Tour from "../component/TourGuide";
+---
+
+<Layout title="Tour Guide">
+  <main>
+    <Tour : client:load />
+  </main>
+</Layout>

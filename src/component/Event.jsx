@@ -11,6 +11,7 @@ const events = [
 Event Coordinator: JKKN WP Kuala Lumpur
 End Date: 2024-09-16
 Event Location: Dataran Merdeka, Kuala Lumpur
+
 The Malaysian Games Festival (FPM) is a program that re-establishes traditional games that are increasingly 
 marginalized to continue to be played by all Malaysians. A tourism program based on arts, culture and heritage 
 in Kuala Lumpur that promotes the art of Traditional Games.
@@ -42,6 +43,7 @@ Activities include:
 Event Coordinator: JKKN Melaka
 End Date: 2024-10-27
 Event Location: Dataran Pahlawan, Bandar Hilir, Melaka
+
 The implementation of a festival / game that highlights the uniqueness of art and culture that covers the 
 Straits States / states that are in the waters of the Malacca Strait region. Implemented as a platform for 
 promoting art, culture and heritage activities in line with the recognition of Melaka as a World Heritage City 
@@ -64,6 +66,7 @@ recognized and ratified by UNESCO.`,
     details: `Start Date: 2024-10-25 Event Coordinator: JKKN Sabah 
 End Date: 2024-10-27 
 Event Location: Padang Merdeka, Kota Kinabalu, Sabah 
+
 Rhythms of Kinabalu (R.O.K) is a program for the promotion and maintenance of traditional arts, especially 
 in Sabah. Bringing people closer, especially in Sabah, to arts and culture activities as well as providing 
 space and opportunities for arts activists in Sabah. Exhibiting local songs and ethnic songs with a 
@@ -93,6 +96,7 @@ Amongst the activities lined up include:
 Event Coordinator: JKKN Selangor
 End Date: 2024-09-08
 Event Location: Batu Laut Beach Square, Tanjung Sepat, Kuala Langat, Selangor
+
 The Selangor Festival @Batu Laut is a program that will showcase the uniqueness of the art and culture of the 
 Selangor community through the organization of various activities such as fashion, folk sports competitions 
 on land and beach such as beach soccer, beach volleyball, beach netball, beach tug-of-war, food traditions, 
