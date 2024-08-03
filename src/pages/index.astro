@@ -1,30 +1,45 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const twinTowerImagePath = '/images/TwinTower.jpg'; // Path relative to the public directory
+const twinTowerImagePath = '/images/Treasure.webp'; // Path relative to the public directory
 const calendarImagePath = '/images/Calendar.png';
 const foodImagePath = '/images/Food.png';
 const planTripImagePath = '/images/PlanTrip.png';
 const tourGuideImagePath = '/images/TourGuide.jpg';
-const calendarLink = '/calendar'; // Replace with actual URL
+const calendarLink = '/Event'; // Replace with actual URL
 const foodLink = '/food'; // Replace with actual URL
 const planTripLink = '/plan-trip'; // Replace with actual URL
 const tourGuideLink = '/tour-guide'; // Replace with actual URL
 ---
 
 <Layout title="Welcome to Travelo.">
-  <div class="relative h-screen">
-    <img
+  
+	<div class="relative h-screen flex items-center justify-center">
+		<img
       src={twinTowerImagePath}
       alt="Twin Tower"
-      class="w-full h-full object-cover flex"
+      class="w-full h-full object-cover flex absolute"
     />
-    <div class="mr-80 absolute inset-0 flex justify-end items-center">
-		<div class="flex items-center justify-center text-white p-5 rounded font-manrope shadow-lg shadow-gray-800">
-			<h1 class="text-xl font-bold">Let's Traverse Malaysia!</h1>
+		<div class="relative w-full max-w-[900px] h-[568px] p-4 md:p-0 flex flex-col justify-center items-center mx-auto z-10">
+		  <div class="w-full h-[300px] relative flex flex-col justify-center items-center">
+			<div class="w-full h-full bg-gray-300 bg-opacity-60 rounded-3xl flex justify-center items-center">
+			  <div class="w-full md:w-[806px] h-auto md:h-[167px] px-4 md:px-0 md:pr-3.5 md:pb-3.5 flex justify-center items-center">
+				<div class="w-full h-full text-center text-black text-2xl md:text-6xl font-extrabold leading-loose">Unleash Your Cultural Hunting in Malaysia</div>
+			  </div>
+			</div>
 		  </div>
-		  
-    </div>
-  </div>
+		  <div class="relative w-full max-w-[761px] h-[74px] px-4 md:px-0 mt-8">
+			<div class="absolute w-full h-full bg-white rounded-2xl border border-gray-200 flex items-center pl-5 pr-3.5">
+			  <i class="fas fa-search text-gray-600 text-2xl mr-3.5"></i>
+			  <div class="flex">
+				<img src="/public/images/searchicon.svg" alt="search icon" class="w-6 h-6 mr-3.5" />
+			  </div>
+			  <div class="text-black text-lg md:text-2xl font-normal">
+				Search by City or Town</div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
   <div class="features-container p-8">
     <h1 class="text-bold text-4xl text-center mb-9" style="font-family: 'Arial', sans-serif;">Our Top Features</h1>
     <div class="flex justify-center gap-4">
