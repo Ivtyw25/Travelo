@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import {connectToDatabase } from '../server';
 import StateCard from './../component/StateCard'
+import {data} from '../data/state-mission';
 
 // let data=[]
 // let errorMessage='';
@@ -33,10 +34,13 @@ import StateCard from './../component/StateCard'
             Mission of Malaysian
     </h1>
     <main class = "mx-10 my-5 grid grid-cols-3">
-      <a href="/Mission-state/">
-        <StateCard state="Sarawak"/>
+      <a href="/Mission-sarawak/">
+        <StateCard state="Sarawak" data={data}/>
       </a>
-      <StateCard state="Penang"/>
+      <a href="/Mission-penang/">
+        <StateCard state="Penang" data={data}/>
+      </a>
+
     </main>
   </div>
 </Layout>
