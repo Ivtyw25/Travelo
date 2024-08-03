@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+<Layout title="Indian Cursine">
+  <main>
+    <div>
+      <h1 class="titles">Foodies Corner</h1>
+    </div>
+    <p class="cuisine">Indian cuisine</p>
+    <div class="food">
+      <div>
+        <img class="food-pic" src="foodimage2/Naan.jpg">
+        <p class="food-name">Naan</p>
+      </div>
+      <div>
+        <img class="food-pic" src="foodimage2/NasiKandar.jpg">
+				<p class="food-name">Nasi Kandar</p>
+      </div>
+			<div>
+        <img class="food-pic" src="foodimage2/RotiCanai.jpg">
+				<p class="food-name">Roti Canai</p>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .titles {
+    font-family: inter;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .cuisine {
+    background-color: gray;
+    font-family: Acme;
+		font-size: 30px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 7px;
+  }
+
+  .food {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .food-pic {
+    width: 200px;
+    height: 200px;
+		object-fit: cover;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex: 1;
+  }
+
+  .food-name {
+    font-family: Roboto;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+  }
+</style>
