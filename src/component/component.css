@@ -1,0 +1,33 @@
+.containers{
+    border: 2px solid rgba(128,128,128,0.1);
+    position: relative;
+    max-width: 420px;
+    border-radius: 20px;
+    padding: 10px 25px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin: 36px 40px;
+    opacity: 0.7;
+}
+
+.title{
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000
+}
+
+.rate{
+    color: #000000;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.containers:hover{
+    opacity: 1;
+    color: #000000;
+}
