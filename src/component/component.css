@@ -40,40 +40,54 @@
     max-width: 400px;
     margin: 20px auto;
     font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .mission-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.mission-card:hover .mission-image {
+    opacity: 0.8;
 }
 
 .mission-content {
     padding: 20px;
-    
 }
 
 .task-name {
     font-size: 24px;
     margin: 0 0 10px;
     color: #333;
+    transition: color 0.3s ease;
+}
+
+.mission-card:hover .task-name {
+    color: #007BFF;
 }
 
 .desc {
-    font-size: 12px;
+    font-size: 16px;
     margin: 0 0 10px;
     color: #555;
-    margin-bottom: 10px;
-
 }
 
 .location {
-    font-size: 10px;
+    font-size: 14px;
     color: #777;
 }
 
-.stats{
-    font-size: 10px;
-    color: #777;
-    margin-top: 5px;
+.stats {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
 }
