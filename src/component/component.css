@@ -15,16 +15,14 @@
 .title{
     font-size: 36px;
     font-weight: bold;
-    color: #000000
+    color: #000000;
+    margin-right: auto;
 }
 
 .rate{
-    color: #000000;
-    bottom: 10px;
-    right: 10px;
-    position: absolute;
+    color:aliceblue;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .containers:hover{
@@ -66,6 +64,7 @@
 .task-name {
     font-size: 24px;
     margin: 0 0 10px;
+    font-weight: 700;
     color: #333;
     transition: color 0.3s ease;
 }

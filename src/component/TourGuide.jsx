@@ -34,10 +34,6 @@ function TourGuide() {
           <img src="../public/TourGuide/3.png" alt="Image 3" onClick={() => handleGuideClick(3)} />
           <img src="../public/TourGuide/1.png" alt="Image 4" onClick={() => handleGuideClick(4)} />
         </div>
-        <div className="row">
-          <img src="../public/TourGuide/5.png" alt="Image 5" onClick={() => handleGuideClick(5)} />
-          <img src="../public/TourGuide/6.png" alt="Image 6" onClick={() => handleGuideClick(6)} />
-        </div>
       </div>
     </div>
   );

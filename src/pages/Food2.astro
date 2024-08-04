@@ -1,0 +1,410 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+  rel="stylesheet"
+/>
+
+<Layout
+  title="Welcome to Astro."
+  style="margin-left: 50px; margin-right: 50px;"
+>
+  <main>
+    <div class="container" id="blur">
+      <div>
+        <h1 class="titles">Foodies Corner</h1>
+      </div>
+    </div>
+    <p class="cuisine">Malay cuisine</p>
+    <a class="see-more" href="/FoodMalay/"><u>More</u></a>
+    <div class="food">
+      <div>
+        <img
+          class="food-pic"
+          src="/public/foodimage2/NasiLemak.jpg"
+          onclick="openModal('Nasi Lemak', '/public/foodimage2/NasiLemak.jpg', 'Malay', 'High', 'Halal', 'RM1.00 - RM5.00', 'Nasi Lemak is rice boiled with coconut milk mixed with pandan leaves for fragrance. You typically eat the rice with sambal (a kind spicy sauce), a boiled egg, slices of cucumber and sometimes with fried chicken or rendang (spicy chunks of meat). A handful of peanuts and fried anchovies get sprinkled on the top too. Nasi Lemak is a famous food in Malaysia and often considered a national dish.')"
+          alt="Nasi Lemak"
+        />
+        <p class="food-name">Nasi Lemak</p>
+      </div>
+      <div>
+        <img
+          class="food-pic"
+          src="/public/foodimage2/Satay.jpg"
+          onclick="openModal('Satay', '/public/foodimage2/Satay.jpg', 'Malay', 'Low', 'Halal', 'RM1.00 - RM2.00', 'Barbequed chicken, mutton or beef in the form of satay with sambal or peanut sauce is a typical kebab-like Malaysian street food. Different stalls have different styles. You pay per stick.')"
+          alt="Satay"
+        />
+        <p class="food-name">Satay</p>
+      </div>
+      <div>
+        <img
+          class="food-pic"
+          src="/public/foodimage2/Rendang.jpg"
+          onclick="openModal('Rendang', '/public/foodimage2/Rendang.jpg', 'Malay', 'Medium', 'Halal', 'RM15.00 - RM30.00', 'Though sometimes erroneously called a curry, Malaysian food aficionados point out that this chunky cauldron of coconut milk and spices is nothing of the sort. The difference is in how it’s prepared: slowly simmered (to let the meat absorb the spices) until the rosy liquid completely evaporates. A favorite, especially during festive seasons, rendang is found across Malaysia.')"
+          alt="Rendang"
+        />
+        <p class="food-name">Rendang</p>
+      </div>
+      <div class="next-but">
+        <button>
+          <a href="/FoodMalay/">
+            <img class="next-button" src="/public/icon/nextButton.png" />
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <br /><br /><br /><br />
+    <p class="cuisine">Chinese cuisine</p>
+    <a
+      class="see-more"
+      href="/FoodChinese"><u>More</u></a
+    >
+    <div class="food">
+      <div>
+        <img
+          class="food-pic"
+          src="/public/foodimage2/CharKueyTeow.jpg"
+          onclick="openModal('Char Kuey Teow', '/public/foodimage2/CharKueyTeow.jpg', 'Chinese', 'Medium', 'Non-Halal', 'RM5.00 - RM9.00', 'The dish is a type of flat fried noodles served with prawns, eggs, boiled bean sprouts and chives. Expect the noodles to be quite spicy')"
+          alt="Char Kuey Teow"
+        />
+        <p class="food-name">Char Kuey Teow</p>
+      </div>
+      <div>
+        <img
+          class="food-pic"
+          src="/public/foodimage2/Laksa.jpg"
+          onclick="openModal('Assam Laksa', '/public/foodimage2/Laksa.jpg', 'Chinese', 'Low', 'Non-Halal', 'RM5.00 - RM8.00', 'If you like noodle soup, check out Assam laksa. Assam laksa consists of thick rice noodles and mackerel boiled in a mixture of lemongrass and ginger. Shrimp paste often comes as a side. You can find this in restaurants or as street food.')"
+          alt="Assam Laksa"
+        />
+        <p class="food-name">Assam Laksa</p>
+      </div>
+      <div>
+        <img
+          class="food-pic"
+          src="/public/foodimage2/Pasembor.jpg"
+          onclick="openModal('Rojak', 'public/foodimage2/Pasembor.jpg', 'Chinese', 'Low', 'Halal', 'RM8.00 - RM15.00', 'Rojak has a mixture of chopped fruit and dough served with other ingredients and can be either sweet or savoury. Some eat it as a snack and others for dessert.')"
+          alt="Rojak"
+        />
+        <p class="food-name">Rojak</p>
+      </div>
+      <div class="next-but">
+        <button>
+          <a href="/FoodChinese/">
+            <img class="next-button" src="/icon/nextButton.png" />
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <br /><br /><br /><br />
+    <p class="cuisine">Indian cuisine</p>
+    <a
+      class="see-more"
+      href="/Food/indian"><u>More</u></a
+    >
+    <div class="container" id="blur">
+      <div class="food">
+        <div>
+          <img
+            class="food-pic"
+            src="/public/foodimage2/NasiKandar.jpg"
+            onclick="openModal('Nasi Kandar', '/public/foodimage2/NasiKandar.jpg', 'Indian', 'Medium', 'Halal', 'RM8.00 - RM15.00', 'If you want a local food experience in Malaysia, head to one of the Indian restaurants. You’ll get a plate of either white rice or mildly flavoured rice, similar to briyani and the choice between a selection of curries and sides, which often includes chicken, mutton, prawns, curried eggs and vegetables. Everything is self-service. You get charged for what you eat. Penang is famous for Nasi Kandar')"
+            alt="Nasi Kandar"
+          />
+          <p class="food-name">Nasi Kandar</p>
+        </div>
+        <div>
+          <img
+            class="food-pic"
+            src="/public/foodimage2/RotiCanai.jpg"
+            onclick="openModal('Roti Canai', '/public/foodimage2/RotiCanai.jpg', 'Indian', 'Low', 'Halal', 'RM1.00 - RM5.00', 'Roti is type of fluffy Indian bread similar to pancakes. People usually eat roti with curry, and it rarely costs more than a few ringgits. Other types include roti susu and roti telur. The first is a sweet cooked with condensed milk while the second is fried with egg.')"
+            alt="Roti Canai"
+          />
+          <p class="food-name">Roti Canai</p>
+        </div>
+        <div>
+          <img
+            class="food-pic"
+            src="/public/foodimage2/Naan.jpg"
+            onclick="openModal('Naan', '/public/foodimage2/Naan.jpg', 'Indian', 'Low', 'Halal', 'RM1.00 - RM5.00', 'The most widely recognized Indian bread is soft, bubbly naan. This unleavened flatbread can be baked or fried and frequently appears as an accompaniment at Indian restaurants in the United States and around the world. Traditionally, naan is cooked in a tandoor, a cylindrical clay or metal oven with a high cooking temperature. The signature bread is served plain or with butter, garlic and/or chilies.')"
+            alt="Naan"
+          />
+          <p class="food-name">Naan</p>
+        </div>
+        <button>
+          <a href="/FoodIndian/">
+            <img class="next-button" src="/icon/nextButton.png" />
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal for displaying details -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-body">
+          <div class="modal-content-container">
+            <img id="modalImage" src="" alt="" class="modal-image" />
+            <div class="modal-details">
+              <p id="modalTitle">
+                <span class="bou">Dish Name: </span>
+                <span id="modalDishName"></span>
+              </p>
+              <p id="modalDetails">
+                <span class="bou">Origin: </span>
+                <span id="modalOrigin"></span>
+              </p>
+              <p id="modalDetails">
+                <span class="bou">Spiciness Level: </span>
+                <span id="modalSpiciness"></span>
+              </p>
+              <p id="modalDetails">
+                <span class="bou">Halal: </span>
+                <span id="modalHalal"></span>
+              </p>
+              <p id="modalDetails">
+                <span class="bou">Price Range: </span>
+                <span id="modalPriceRange"></span>
+              </p>
+            </div>
+          </div>
+          <br />
+          <div class="modal-detail-block">
+            <p
+              id="modalDetailText"
+              style="width: 600px; margin-left: 125px; text-align: left; margin-bottom: 30px;"
+            >
+              <span class="bou">Description: </span><br /><br /><span
+                id="modalDescription"
+                class="description"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function openModal(
+        dishName,
+        imageSrc,
+        origin,
+        spiciness,
+        halal,
+        priceRange,
+        description
+      ) {
+        const blurElement = document.getElementById("blur");
+        const modalElement = document.getElementById("modal");
+        const modalImage = document.getElementById("modalImage");
+        const modalDishName = document.getElementById("modalDishName");
+        const modalOrigin = document.getElementById("modalOrigin");
+        const modalSpiciness = document.getElementById("modalSpiciness");
+        const modalHalal = document.getElementById("modalHalal");
+        const modalPriceRange = document.getElementById("modalPriceRange");
+        const modalDescription = document.getElementById("modalDescription");
+
+        if (blurElement && modalElement) {
+          blurElement.classList.add("active");
+          modalElement.style.display = "block";
+          modalImage.src = imageSrc;
+          modalDishName.textContent = dishName;
+          modalOrigin.textContent = origin;
+          modalSpiciness.textContent = spiciness;
+          modalHalal.textContent = halal;
+          modalPriceRange.textContent = priceRange;
+          modalDescription.textContent = description;
+        }
+      }
+
+      function closeModal() {
+        const blurElement = document.getElementById("blur");
+        const modalElement = document.getElementById("modal");
+        if (blurElement && modalElement) {
+          blurElement.classList.remove("active");
+          modalElement.style.display = "none";
+        }
+      }
+    </script>
+  </main>
+</Layout>
+
+<style>
+  .titles {
+    font-family: inter;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .cuisine {
+    background-color: gray;
+    font-family: Acme;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    padding: 5px;
+    border-radius: 7px;
+  }
+
+  .food {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .food-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex: 1;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .food-name {
+    font-family: Roboto;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+
+  .food-pic:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+
+  .next-but {
+    display: flex;
+  }
+
+  .next-button {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    margin-bottom: 135px;
+  }
+
+  .see-more {
+    margin-left: 835px;
+    transition: transform 0.3s ease;
+  }
+
+  .see-more:hover {
+    color: rgb(187, 187, 4);
+    transform: scale(1.2);
+  }
+
+  .container#blur.active {
+    filter: blur(20px);
+    pointer-events: none; /* Prevents interaction with blurred content */
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: #333; /* Dark background color */
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px; /* Rounded corners */
+    width: 70%; /* Adjust width to be smaller */
+    max-width: 900px; /* Maximum width */
+    color: #fff; /* White text color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Needed for the close button to be positioned absolutely within this */
+    padding-top: 60px;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+  }
+
+  .modal-content-container {
+    display: flex;
+    flex-direction: row; /* Keep image and details side by side */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+  }
+
+  .modal-image {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 100px; /* Space between image and details */
+    margin-left: 150px;
+  }
+
+  .modal-details {
+    width: 50%;
+    text-align: left; /* Align text to the left */
+  }
+
+  .modal-details p {
+    font-size: 18px; /* Adjust font size if needed */
+    margin-bottom: 10px; /* Adds spacing between paragraphs */
+  }
+
+  .modal-detail-block {
+    width: 100%;
+    text-align: left; /* Align text to the left */
+    padding-top: 10px; /* Adds space above the detail block */
+    margin-left: 50px;
+  }
+
+  .modal-detail-block p {
+    font-size: 18px; /* Same font size as other details */
+    margin-bottom: 10px; /* Adds spacing between paragraphs */
+  }
+
+  .close {
+    color: #aaa;
+    position: absolute; /* Position absolutely within the modal content */
+    top: 10px; /* Distance from the top of the modal content */
+    right: 20px; /* Distance from the right of the modal content */
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #fff; /* Change color on hover or focus */
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .description {
+    margin-left: 30px;
+  }
+
+  .bou {
+    font-weight: bold; /* Correct property for bold text */
+  }
+</style>

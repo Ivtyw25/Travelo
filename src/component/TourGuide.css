@@ -4,9 +4,10 @@
     display: flex;
     flex-direction: column;
     background-image: url('../public/TourGuide/bg.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     color: black;
+    margin-bottom: 40px;
   }
   
   .App-header {
